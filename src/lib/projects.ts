@@ -15,28 +15,21 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "This site",
+    title: "NYU Pi Delta Psi",
     description:
-      "The site you're on. Next.js and Tailwind, blog posts written in Markdown, hosted on Vercel. I keep it simple so I actually update it.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
-    repo: "https://github.com/victorlkwang/victorlkwang.me",
-    live: "https://victorlkwang.me",
-    year: "2026",
+      "The website for NYU's Pi Delta Psi chapter (ΠΔΨ). A proper home online for the org — who the brothers are, what the fraternity is about, and how to rush. Designed and built it end to end.",
+    tags: ["Next.js", "TypeScript"],
+    repo: "https://github.com/victorlkwang/nyupdpsi.org",
+    live: "https://nyupdpsi.org",
+    year: "2025",
     featured: true,
   },
   {
-    title: "Project Two",
+    title: "Bobst Bot",
     description:
-      "Replace this with a real project. Say what it does in one line, then why you built it. Skip the buzzwords.",
-    tags: ["React", "Node.js"],
-    repo: "https://github.com/victorlkwang",
-    year: "2025",
-  },
-  {
-    title: "Project Three",
-    description:
-      "Another slot for something you've made. A class project, a hackathon build, or a thing you made to scratch your own itch.",
-    tags: ["Python", "Machine learning"],
-    year: "2025",
+      "A Python bot that automates booking study rooms at NYU's Bobst Library, so you can grab a room before they're all gone instead of hammering refresh on the reservation page.",
+    tags: ["Python", "Automation"],
+    repo: "https://github.com/victorlkwang/bobst-bot",
+    year: "2026",
   },
 ];
