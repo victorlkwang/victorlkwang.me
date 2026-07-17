@@ -19,8 +19,12 @@ Almost everything is data-driven, so you rarely need to touch the layout code:
 | What to change | File |
 | --- | --- |
 | Name, bio, role, socials, nav links | `src/lib/site.ts` |
-| Projects | `src/lib/projects.ts` |
+| Projects | `content/projects/*.md` (one file per project) |
 | Blog posts | `content/blog/*.md` (one file per post) |
+
+Both projects and blog posts work the same way: each is a Markdown file with a
+short front-matter block on top and a full write-up below, and each gets its own
+page you can click into.
 
 ### Adding your profile photo
 
@@ -44,6 +48,28 @@ Write your post in **Markdown** here.
 ```
 
 Commit and push — Vercel redeploys automatically.
+
+### Adding a project
+
+Same idea as a blog post. Create a Markdown file in `content/projects/`, e.g.
+`content/projects/my-project.md`:
+
+```md
+---
+title: "My Project"
+date: "2026-03-01"
+year: "2026"
+excerpt: "One-line summary shown on the projects list."
+tags: ["Next.js", "TypeScript"]
+repo: "https://github.com/you/my-project"
+live: "https://my-project.com"
+featured: true
+---
+
+The full story of the project in **Markdown** here.
+```
+
+`repo`, `live`, and `featured` are optional. Commit and push to publish.
 
 ## Running locally
 
