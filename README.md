@@ -22,6 +22,12 @@ Almost everything is data-driven, so you rarely need to touch the layout code:
 | Projects | `src/lib/projects.ts` |
 | Blog posts | `content/blog/*.md` (one file per post) |
 
+### Adding your profile photo
+
+Drop your photo into the `public/` folder (e.g. `public/profile.jpg`), then set
+`avatar: "/profile.jpg"` in `src/lib/site.ts`. It shows on the home page next to
+your intro. A placeholder (`public/profile.svg`) is used until you swap it in.
+
 ### Adding a blog post
 
 Create a new Markdown file in `content/blog/`, e.g. `content/blog/my-post.md`:

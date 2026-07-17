@@ -11,6 +11,11 @@ export const site = {
   email: "vhw2009@nyu.edu",
   location: "New York",
 
+  // Your profile photo, shown on the home page.
+  // Drop your image in the /public folder (e.g. public/profile.jpg) and
+  // point this at it: "/profile.jpg". A placeholder is used until then.
+  avatar: "/profile.svg",
+
   // A couple of sentences about you, shown on the home page.
   // Write like you'd talk. Swap these for the real thing.
   about: [
