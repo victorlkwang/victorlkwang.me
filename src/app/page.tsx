@@ -6,15 +6,12 @@ export default function HomePage() {
     <div className="space-y-16">
       {/* Hero */}
       <section className="space-y-6">
-        <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs text-muted">
-          <span className="h-2 w-2 rounded-full bg-accent" />
-          Available for opportunities
-        </div>
-
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          Hi, I&apos;m {site.name.split(" ")[0]}.
+          {site.name}
         </h1>
-        <p className="text-lg text-muted">{site.role}</p>
+        <p className="text-lg text-muted">
+          {site.role} · {site.location}
+        </p>
 
         <div className="space-y-4 text-base leading-relaxed">
           {site.about.map((p, i) => (
@@ -40,13 +37,13 @@ export default function HomePage() {
             href="/projects"
             className="rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
           >
-            View my work
+            My projects
           </Link>
           <Link
             href="/contact"
             className="rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
           >
-            Get in touch
+            Say hi
           </Link>
         </div>
       </section>
@@ -54,9 +51,9 @@ export default function HomePage() {
       {/* Quick links to the other pages */}
       <section className="grid gap-4 sm:grid-cols-3">
         {[
-          { href: "/projects", title: "Projects", desc: "Things I've built." },
-          { href: "/blog", title: "Blog", desc: "Thoughts & writing." },
-          { href: "/contact", title: "Contact", desc: "Let's connect." },
+          { href: "/projects", title: "Projects", desc: "Stuff I've made." },
+          { href: "/blog", title: "Blog", desc: "Occasional writing." },
+          { href: "/contact", title: "Contact", desc: "Say hi." },
         ].map((c) => (
           <Link
             key={c.href}

@@ -5,20 +5,21 @@
 
 export const site = {
   name: "Victor Wang",
-  // Short tagline shown in the hero + browser tab
-  role: "Student · Developer · Builder",
+  // Short line under your name in the hero + used in the browser tab
+  role: "Student at NYU",
   domain: "victorlkwang.me",
   email: "vhw2009@nyu.edu",
-  location: "New York, NY",
+  location: "New York",
 
   // A couple of sentences about you, shown on the home page.
+  // Write like you'd talk. Swap these for the real thing.
   about: [
-    "Hi, I'm Victor — a student at NYU who loves turning ideas into things people can actually use.",
-    "I care about clean design, thoughtful engineering, and building projects that solve real problems. When I'm not coding, you'll usually find me learning something new or tinkering with a side project.",
+    "Hey, I'm Victor. I study at NYU, and most of my free time goes into building things for the web and taking apart how other things work.",
+    "This site is where I keep the projects I've worked on and post the occasional thing I've been thinking about. It's a work in progress, same as me.",
   ],
 
-  // A few quick facts / interests shown as chips on the home page.
-  highlights: ["Web Development", "Machine Learning", "Design", "Open Source"],
+  // A few things you're into. Shown as small chips on the home page.
+  highlights: ["Web", "Machine learning", "Design", "Open source"],
 
   // Your social / professional links. Delete any you don't want.
   socials: [

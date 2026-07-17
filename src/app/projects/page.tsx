@@ -12,8 +12,8 @@ export default function ProjectsPage() {
       <header className="space-y-3">
         <h1 className="text-3xl font-semibold tracking-tight">Projects</h1>
         <p className="text-muted">
-          A selection of things I&apos;ve designed and built. Click through to
-          the code or a live demo.
+          Some things I&apos;ve built. A few are finished, a few aren&apos;t.
+          Code and demos are linked where they exist.
         </p>
       </header>
 

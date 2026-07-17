@@ -10,10 +10,10 @@ export default function ContactPage() {
   return (
     <div className="space-y-10">
       <header className="space-y-3">
-        <h1 className="text-3xl font-semibold tracking-tight">Get in touch</h1>
+        <h1 className="text-3xl font-semibold tracking-tight">Contact</h1>
         <p className="text-muted">
-          Have a question, an opportunity, or just want to say hi? I&apos;d love
-          to hear from you. The fastest way to reach me is email.
+          Email is the best way to reach me. I read everything and usually reply
+          within a day or two.
         </p>
       </header>
 
@@ -53,9 +53,7 @@ export default function ContactPage() {
           ))}
       </div>
 
-      <p className="text-sm text-muted">
-        Based in {site.location}. Usually replying within a day or two.
-      </p>
+      <p className="text-sm text-muted">Currently in {site.location}.</p>
     </div>
   );
 }

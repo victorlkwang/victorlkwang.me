@@ -15,7 +15,7 @@ export default function BlogPage() {
       <header className="space-y-3">
         <h1 className="text-3xl font-semibold tracking-tight">Blog</h1>
         <p className="text-muted">
-          Notes on what I&apos;m learning, building, and thinking about.
+          Occasional posts about what I&apos;m working on.
         </p>
       </header>
 
