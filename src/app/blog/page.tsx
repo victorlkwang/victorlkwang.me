@@ -11,11 +11,11 @@ export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <div className="space-y-10">
+    <div className="mx-auto w-full max-w-4xl space-y-10 px-6 py-16 sm:py-20">
       <header className="space-y-3">
-        <h1 className="text-3xl font-semibold tracking-tight">Blog</h1>
+        <h1 className="text-4xl font-semibold tracking-tight">Blog</h1>
         <p className="text-muted">
-          Notes on what I&apos;m learning, building, and thinking about.
+          Occasional posts about what I&apos;m working on.
         </p>
       </header>
 
@@ -27,7 +27,7 @@ export default function BlogPage() {
             <li key={post.slug}>
               <Link
                 href={`/blog/${post.slug}`}
-                className="group block rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent"
+                className="group block rounded-2xl border border-border bg-card p-6 transition-colors hover:border-accent hover:bg-card-hover"
               >
                 <div className="flex items-baseline justify-between gap-4">
                   <h2 className="text-lg font-medium group-hover:text-accent">

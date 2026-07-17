@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { nav, site } from "@/lib/site";
 
-export default function Nav() {
+export default function TopNav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -13,23 +13,23 @@ export default function Nav() {
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-      <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
+    <header className="sticky top-0 z-50 border-b border-border bg-background/70 backdrop-blur-xl">
+      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
         <Link
           href="/"
-          className="font-mono text-sm font-semibold tracking-tight hover:text-accent"
           onClick={() => setOpen(false)}
+          className="font-mono text-sm font-semibold tracking-tight"
         >
           {site.domain}
         </Link>
 
-        {/* Desktop nav — the page legend */}
+        {/* Desktop: the page legend */}
         <ul className="hidden items-center gap-1 sm:flex">
           {nav.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}
-                className={`rounded-full px-3 py-1.5 text-sm transition-colors ${
+                className={`rounded-full px-4 py-1.5 text-sm transition-colors ${
                   isActive(item.href)
                     ? "bg-accent-soft text-accent"
                     : "text-muted hover:text-foreground"
@@ -52,7 +52,6 @@ export default function Nav() {
         </button>
       </nav>
 
-      {/* Mobile menu */}
       {open && (
         <ul className="flex flex-col gap-1 border-t border-border px-6 py-3 sm:hidden">
           {nav.map((item) => (

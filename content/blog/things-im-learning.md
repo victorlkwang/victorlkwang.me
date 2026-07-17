@@ -1,24 +1,12 @@
 ---
-title: "A Few Things I'm Learning This Semester"
+title: "Ship the small version"
 date: "2026-02-02"
-excerpt: "Notes to myself on web development, and staying curious."
-tags: ["learning", "web"]
+excerpt: "The projects I actually finish are the ones I kept small."
+tags: ["building"]
 ---
 
-A short post to get in the habit of writing regularly. Here are a few things on my mind lately.
+I have a folder full of projects I never finished. Almost all of them died the same way: I planned something huge, got excited, built the hard 20% first, and then lost steam before any of it worked end to end.
 
-## Ship small, ship often
+The ones I did finish were embarrassingly small when they first went live. This site launched with two blog posts and a fake project on the projects page. But it was *up*, and once something is up I'll actually keep poking at it. A thing that exists gets improved. A thing in my head doesn't.
 
-The projects I actually finish are the ones I keep small. It's tempting to plan something huge, but a tiny thing that's *live* beats a grand thing that's *someday*.
-
-## Read the docs, then read the source
-
-Documentation tells you how something is meant to be used. The source tells you how it actually works. When I'm stuck, jumping into the source of a library has saved me more times than I can count.
-
-> The best way to learn is to build something you actually want to exist.
-
-## Rest counts as work
-
-Burning out is not a badge of honor. Some of my best ideas show up on a walk, not at my desk.
-
-More soon.
+So lately the rule is: find the smallest version that's still real, build that, put it somewhere I can see it, and only then decide what's next. Boring advice, I know. It's just the only thing that's worked for me.

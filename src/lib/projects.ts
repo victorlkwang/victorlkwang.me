@@ -15,9 +15,9 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Personal Portfolio",
+    title: "This site",
     description:
-      "This very website — a fast, responsive portfolio built with Next.js and Tailwind CSS, deployed on Vercel.",
+      "The site you're on. Next.js and Tailwind, blog posts written in Markdown, hosted on Vercel. I keep it simple so I actually update it.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     repo: "https://github.com/victorlkwang/victorlkwang.me",
     live: "https://victorlkwang.me",
@@ -27,7 +27,7 @@ export const projects: Project[] = [
   {
     title: "Project Two",
     description:
-      "A short, punchy description of what this project does and why it's interesting. Focus on the problem it solves and the impact.",
+      "Replace this with a real project. Say what it does in one line, then why you built it. Skip the buzzwords.",
     tags: ["React", "Node.js"],
     repo: "https://github.com/victorlkwang",
     year: "2025",
@@ -35,8 +35,8 @@ export const projects: Project[] = [
   {
     title: "Project Three",
     description:
-      "Another project. Replace this placeholder with something you're proud of — a class project, a hackathon build, or an experiment.",
-    tags: ["Python", "Machine Learning"],
+      "Another slot for something you've made. A class project, a hackathon build, or a thing you made to scratch your own itch.",
+    tags: ["Python", "Machine learning"],
     year: "2025",
   },
 ];
