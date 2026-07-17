@@ -6,14 +6,12 @@ export default function HomePage() {
     <div className="space-y-16">
       {/* Hero */}
       <section className="space-y-6">
-        <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          {site.name}
+        <p className="font-mono text-sm text-accent">Hi there 👋</p>
+        <h1 className="max-w-3xl text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+          I&apos;m {site.name.split(" ")[0]} — I build things for the web.
         </h1>
-        <p className="text-lg text-muted">
-          {site.role} · {site.location}
-        </p>
 
-        <div className="space-y-4 text-base leading-relaxed">
+        <div className="max-w-2xl space-y-4 text-lg leading-relaxed text-muted">
           {site.about.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
