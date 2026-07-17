@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="space-y-10">
+    <div className="mx-auto w-full max-w-4xl space-y-10 px-6 py-16 sm:py-20">
       <header className="space-y-3">
-        <h1 className="text-3xl font-semibold tracking-tight">Contact</h1>
+        <h1 className="text-4xl font-semibold tracking-tight">Contact</h1>
         <p className="text-muted">
           Email is the best way to reach me. I read everything and usually reply
           within a day or two.
@@ -20,7 +20,7 @@ export default function ContactPage() {
       {/* Primary email CTA */}
       <a
         href={`mailto:${site.email}`}
-        className="group flex items-center justify-between rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent"
+        className="group flex items-center justify-between rounded-2xl border border-border bg-card p-6 transition-colors hover:border-accent hover:bg-card-hover"
       >
         <div>
           <p className="text-sm text-muted">Email me</p>
@@ -43,7 +43,7 @@ export default function ContactPage() {
               href={s.href}
               target="_blank"
               rel="noreferrer"
-              className="group flex items-center justify-between rounded-xl border border-border bg-card p-5 transition-colors hover:border-accent"
+              className="group flex items-center justify-between rounded-2xl border border-border bg-card p-5 transition-colors hover:border-accent hover:bg-card-hover"
             >
               <span className="font-medium">{s.label}</span>
               <span className="text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-accent">

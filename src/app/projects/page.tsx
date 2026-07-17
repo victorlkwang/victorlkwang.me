@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <div className="space-y-10">
+    <div className="mx-auto w-full max-w-4xl space-y-10 px-6 py-16 sm:py-20">
       <header className="space-y-3">
-        <h1 className="text-3xl font-semibold tracking-tight">Projects</h1>
+        <h1 className="text-4xl font-semibold tracking-tight">Projects</h1>
         <p className="text-muted">
           Some things I&apos;ve built. A few are finished, a few aren&apos;t.
           Code and demos are linked where they exist.
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
         {projects.map((p) => (
           <article
             key={p.title}
-            className="rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent"
+            className="rounded-2xl border border-border bg-card p-6 transition-colors hover:border-accent hover:bg-card-hover"
           >
             <div className="flex items-start justify-between gap-4">
               <h2 className="text-lg font-medium">

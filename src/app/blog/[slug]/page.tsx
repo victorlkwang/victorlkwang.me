@@ -31,7 +31,7 @@ export default async function PostPage({
   if (!post) notFound();
 
   return (
-    <article className="space-y-8">
+    <article className="mx-auto w-full max-w-3xl space-y-8 px-6 py-16 sm:py-20">
       <Link
         href="/blog"
         className="inline-block text-sm text-muted hover:text-accent"
@@ -40,7 +40,7 @@ export default async function PostPage({
       </Link>
 
       <header className="space-y-3 border-b border-border pb-6">
-        <h1 className="text-3xl font-semibold tracking-tight">{post.title}</h1>
+        <h1 className="text-4xl font-semibold tracking-tight">{post.title}</h1>
         <div className="flex items-center gap-3 text-sm text-muted">
           <time className="font-mono">{formatDate(post.date)}</time>
           {post.tags.length > 0 && (
