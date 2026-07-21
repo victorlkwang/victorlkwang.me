@@ -39,6 +39,17 @@ export default async function ProjectPage({
         ← Back to projects
       </Link>
 
+      {project.cover && (
+        <div className="overflow-hidden rounded-2xl border border-border">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={project.cover}
+            alt={`${project.title} preview`}
+            className="w-full object-cover"
+          />
+        </div>
+      )}
+
       <header className="space-y-4 border-b border-border pb-6">
         <div className="flex items-baseline justify-between gap-4">
           <h1 className="text-4xl font-semibold tracking-tight">

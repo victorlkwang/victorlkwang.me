@@ -26,11 +26,17 @@ Both projects and blog posts work the same way: each is a Markdown file with a
 short front-matter block on top and a full write-up below, and each gets its own
 page you can click into.
 
-### Adding your profile photo
+### Updating your resume
 
-Drop your photo into the `public/` folder (e.g. `public/profile.jpg`), then set
-`avatar: "/profile.jpg"` in `src/lib/site.ts`. It shows on the home page next to
-your intro. A placeholder (`public/profile.svg`) is used until you swap it in.
+Replace `public/Victor_Wang_Resume.pdf` with a new PDF (keep the same name, or
+update `resume` in `src/lib/site.ts` to match). It's shown on the `/resume` page
+with view + download buttons.
+
+### Updating your profile photo
+
+The home-page photo lives at `public/profile.webp` and is referenced by `avatar`
+in `src/lib/site.ts`. Replace the file (keep the name) or point `avatar` at a new
+one to change it.
 
 ### Adding a blog post
 

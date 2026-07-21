@@ -1,6 +1,6 @@
 ---
 title: "First post"
-date: "2026-01-15"
+date: "2026-07-21"
 excerpt: "I finally built the site. Here's why, and what I'll put here."
 tags: ["personal"]
 ---

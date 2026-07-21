@@ -2,24 +2,39 @@
 title: "Bobst Bot"
 date: "2026-07-13"
 year: "2026"
-excerpt: "A Python bot that automates booking study rooms at NYU's Bobst Library."
-tags: ["Python", "Automation"]
+excerpt: "Python automation that books NYU Bobst study rooms on LibCal — a Playwright browser bot plus a faster direct-HTTP path."
+tags: ["Python", "Playwright", "Automation"]
 repo: "https://github.com/victorlkwang/bobst-bot"
+cover: "/projects/bobst-terminal.webp"
 ---
 
-Study rooms at NYU's Bobst Library get snapped up the moment they open, and
-refreshing the reservation page at midnight is a miserable way to spend your
-time. So I wrote a bot to do it for me.
+Group study rooms at NYU's Bobst Library are booked through LibCal, which has no
+public API and gets picked clean the moment slots open. Bobst Bot automates the
+reservation flow so you can claim a room without babysitting the booking page.
 
-## What it does
+## Two ways to book
 
-- Automates the room reservation flow so you don't have to babysit it
-- Grabs an open slot before they're all gone
+**Browser bot** (`booking_bot.py`) — drives the LibCal booking page with
+Playwright. It authenticates with your NetID, waits for you to approve a single
+Duo push, then walks the ~14-day booking window one day at a time to work around
+LibCal's 180-minute-per-day cart limit. A companion `parallel_bot.py` runs
+several credentials at once, each in its own process with staggered Duo pushes.
 
-## How it's built
+**Direct HTTP path** (`capture_requests.py` + `http_booking.py`) — records the
+real API calls LibCal fires during one manual booking, saves the session cookie,
+then replays those requests directly. This skips the browser entirely and books
+in seconds instead of minutes. Endpoint paths and field names are read from your
+own capture rather than hard-coded, so it keeps working as LibCal changes.
 
-Written in Python. It handles the login and booking steps end to end so the
-whole thing runs on its own.
+## Engineering notes
 
-*This write-up is a starting point — edit `content/projects/bobst-bot.md` to add
-setup instructions and the details of how it works.*
+- **Playwright** for resilient browser automation through NetID + Duo login.
+- **Capture-and-replay** design that reverse-engineers LibCal's internal
+  endpoints from live traffic, with the browser bot as an always-works fallback.
+- Configurable via command-line flags (room, sections per day, concurrency,
+  headless mode) instead of editing code.
+- Credentials, cookies, and captures are all git-ignored so nothing sensitive is
+  committed.
+
+*Built for personal use — it runs against my own NetID, lightly, in line with
+NYU's acceptable-use policy.*
