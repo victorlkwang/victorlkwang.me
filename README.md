@@ -29,8 +29,10 @@ page you can click into.
 ### Updating your resume
 
 Replace `public/Victor_Wang_Resume.pdf` with a new PDF (keep the same name, or
-update `resume` in `src/lib/site.ts` to match). It's shown on the `/resume` page
-with view + download buttons.
+update `resume` in `src/lib/site.ts` to match). The `/resume` page shows a
+full-width image of it (`public/resume-preview.webp`) plus download / open
+buttons. If you swap the PDF, regenerate that preview image so it matches (any
+"PDF page to image" tool works — export page 1 to WebP at ~1600px wide).
 
 ### Updating your profile photo
 
