@@ -6,6 +6,7 @@ excerpt: "A full-stack chapter operations platform for NYU's Pi Delta Psi — pu
 tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma"]
 repo: "https://github.com/victorlkwang/nyupdpsi.org"
 live: "https://nyupdpsi.org"
+cover: "/projects/pdpsi-home.webp"
 featured: true
 ---
 
@@ -23,6 +24,13 @@ either an interest form or, when an admin flips a switch, an event sign-in sheet
 **Members' area** — email/password accounts with email verification and password
 reset. Every brother can browse a searchable directory with a clickable
 **lineage** view (ancestry of bigs and a tree of littles) and CSV export.
+
+![Brotherhood in action on the Active House page](/projects/pdpsi-brotherhood.webp)
+
+The Active House and Alumni rosters are rendered from the database and grouped by
+pledge class, so the site stays current as the chapter changes.
+
+![Roster grouped by pledge class](/projects/pdpsi-roster.webp)
 
 **Admin console** — manage brothers and pledge classes, upload photos, set
 big/little relationships, and graduate members from Active to Alumni. Admins can

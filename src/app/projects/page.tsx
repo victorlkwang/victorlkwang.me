@@ -28,8 +28,19 @@ export default function ProjectsPage() {
             <Link
               key={p.slug}
               href={`/projects/${p.slug}`}
-              className="group block rounded-2xl border border-border bg-card p-6 transition-colors hover:border-accent hover:bg-card-hover"
+              className="group block overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-accent hover:bg-card-hover"
             >
+              {p.cover && (
+                <div className="aspect-[16/9] overflow-hidden border-b border-border bg-background">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={p.cover}
+                    alt={`${p.title} preview`}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
+                </div>
+              )}
+              <div className="p-6">
               <div className="flex items-start justify-between gap-4">
                 <h2 className="text-lg font-medium group-hover:text-accent">
                   {p.title}
@@ -69,6 +80,7 @@ export default function ProjectsPage() {
                   ))}
                 </div>
               )}
+              </div>
             </Link>
           ))}
         </div>

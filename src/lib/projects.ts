@@ -18,6 +18,7 @@ export type ProjectMeta = {
   tags: string[];
   repo?: string;
   live?: string;
+  cover?: string; // path to a cover image in /public
   featured?: boolean;
 };
 
@@ -43,6 +44,7 @@ function toMeta(file: string): ProjectMeta {
     tags: data.tags ?? [],
     repo: data.repo,
     live: data.live,
+    cover: data.cover,
     featured: data.featured ?? false,
   };
 }

@@ -5,6 +5,7 @@ year: "2026"
 excerpt: "Python automation that books NYU Bobst study rooms on LibCal — a Playwright browser bot plus a faster direct-HTTP path."
 tags: ["Python", "Playwright", "Automation"]
 repo: "https://github.com/victorlkwang/bobst-bot"
+cover: "/projects/bobst-terminal.webp"
 ---
 
 Group study rooms at NYU's Bobst Library are booked through LibCal, which has no
