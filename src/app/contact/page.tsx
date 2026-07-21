@@ -6,6 +6,24 @@ export const metadata: Metadata = {
   description: `Get in touch with ${site.name}.`,
 };
 
+const methods = [
+  {
+    label: "Personal email",
+    value: site.email,
+    href: `mailto:${site.email}`,
+  },
+  {
+    label: "School email",
+    value: site.schoolEmail,
+    href: `mailto:${site.schoolEmail}`,
+  },
+  {
+    label: "Phone",
+    value: site.phone,
+    href: `tel:+1${site.phone.replace(/\D/g, "")}`,
+  },
+];
+
 export default function ContactPage() {
   return (
     <div className="mx-auto w-full max-w-4xl space-y-10 px-6 py-16 sm:py-20">
@@ -17,23 +35,23 @@ export default function ContactPage() {
         </p>
       </header>
 
-      {/* Primary email CTA */}
-      <a
-        href={`mailto:${site.email}`}
-        className="group flex items-center justify-between rounded-2xl border border-border bg-card p-6 transition-colors hover:border-accent hover:bg-card-hover"
-      >
-        <div>
-          <p className="text-sm text-muted">Email me</p>
-          <p className="mt-1 font-mono text-lg group-hover:text-accent">
-            {site.email}
-          </p>
-        </div>
-        <span className="text-2xl text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-accent">
-          →
-        </span>
-      </a>
+      {/* Direct contact methods */}
+      <div className="grid gap-4 sm:grid-cols-3">
+        {methods.map((m) => (
+          <a
+            key={m.label}
+            href={m.href}
+            className="group flex flex-col justify-between gap-6 rounded-2xl border border-border bg-card p-5 transition-colors hover:border-accent hover:bg-card-hover"
+          >
+            <p className="text-sm text-muted">{m.label}</p>
+            <p className="font-mono text-sm break-all group-hover:text-accent">
+              {m.value}
+            </p>
+          </a>
+        ))}
+      </div>
 
-      {/* Other links */}
+      {/* Social links */}
       <div className="grid gap-4 sm:grid-cols-2">
         {site.socials
           .filter((s) => !s.href.startsWith("mailto:"))

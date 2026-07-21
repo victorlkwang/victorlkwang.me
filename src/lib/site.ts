@@ -8,7 +8,9 @@ export const site = {
   // Short line under your name in the hero + used in the browser tab
   role: "Computer Science student at NYU",
   domain: "victorlkwang.me",
-  email: "vhw2009@nyu.edu",
+  email: "victorlkwang@gmail.com", // personal — primary way to reach me
+  schoolEmail: "vhw2009@nyu.edu",
+  phone: "(646) 299-2124",
   location: "New York",
 
   // Your profile photo, shown on the home page.
@@ -32,7 +34,7 @@ export const site = {
   socials: [
     { label: "GitHub", href: "https://github.com/victorlkwang" },
     { label: "LinkedIn", href: "https://www.linkedin.com/" },
-    { label: "Email", href: "mailto:vhw2009@nyu.edu" },
+    { label: "Email", href: "mailto:victorlkwang@gmail.com" },
   ],
 };
 
