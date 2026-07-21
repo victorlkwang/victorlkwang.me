@@ -15,8 +15,11 @@ export const site = {
   // Your profile photo, shown on the home page. Lives in /public.
   avatar: "/profile.webp",
 
-  // Your résumé PDF, shown on the /resume page. Lives in /public.
+  // Your résumé. `resume` is the downloadable PDF; `resumePreview` is a
+  // full-width image of it shown on the /resume page. Both live in /public.
+  // If you replace the PDF, regenerate the preview image too.
   resume: "/Victor_Wang_Resume.pdf",
+  resumePreview: "/resume-preview.webp",
 
   // A couple of sentences about you, shown on the home page.
   about: [

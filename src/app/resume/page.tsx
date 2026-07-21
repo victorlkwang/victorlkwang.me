@@ -35,25 +35,16 @@ export default function ResumePage() {
         </div>
       </header>
 
-      {/* Inline preview (desktop). Falls back to the buttons above on devices
-          that won't render an embedded PDF. */}
-      <object
-        data={site.resume}
-        type="application/pdf"
-        className="hidden h-[900px] w-full rounded-2xl border border-border sm:block"
-        aria-label={`${site.name}'s résumé`}
-      >
-        <p className="p-6 text-sm text-muted">
-          Your browser can&apos;t display the PDF inline.{" "}
-          <a href={site.resume} className="text-accent hover:underline">
-            Download it instead.
-          </a>
-        </p>
-      </object>
-
-      <p className="text-sm text-muted sm:hidden">
-        Tap “Open in new tab” above to view the full résumé.
-      </p>
+      {/* Full-width preview of the résumé — renders large and crisp on every
+          device (no tiny embedded PDF viewer). */}
+      <a href={site.resume} target="_blank" rel="noreferrer" className="block">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={site.resumePreview}
+          alt={`${site.name}'s résumé`}
+          className="w-full rounded-2xl border border-border shadow-sm"
+        />
+      </a>
     </div>
   );
 }

@@ -31,12 +31,12 @@ export default function ProjectsPage() {
               className="group block overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-accent hover:bg-card-hover"
             >
               {p.cover && (
-                <div className="aspect-[16/9] overflow-hidden border-b border-border bg-background">
+                <div className="border-b border-border bg-background">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={p.cover}
                     alt={`${p.title} preview`}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                    className="w-full"
                   />
                 </div>
               )}
