@@ -10,13 +10,10 @@ export const site = {
   domain: "victorlkwang.me",
   email: "victorlkwang@gmail.com", // personal — primary way to reach me
   schoolEmail: "vhw2009@nyu.edu",
-  phone: "(646) 299-2124",
   location: "New York",
 
-  // Your profile photo, shown on the home page.
-  // Drop your image in the /public folder (e.g. public/profile.jpg) and
-  // point this at it: "/profile.jpg". A placeholder is used until then.
-  avatar: "/profile.svg",
+  // Your profile photo, shown on the home page. Lives in /public.
+  avatar: "/profile.webp",
 
   // Your résumé PDF, shown on the /resume page. Lives in /public.
   resume: "/Victor_Wang_Resume.pdf",
@@ -28,12 +25,12 @@ export const site = {
   ],
 
   // A few things you're into. Shown as small chips on the home page.
-  highlights: ["Web", "Machine learning", "Design", "Open source"],
+  highlights: ["Full-stack web", "Python", "SQL", "TypeScript"],
 
   // Your social / professional links. Delete any you don't want.
   socials: [
     { label: "GitHub", href: "https://github.com/victorlkwang" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/" },
+    { label: "LinkedIn", href: "https://linkedin.com/in/victorlkwang" },
     { label: "Email", href: "mailto:victorlkwang@gmail.com" },
   ],
 };

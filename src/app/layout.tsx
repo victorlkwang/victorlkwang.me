@@ -21,13 +21,18 @@ export const metadata: Metadata = {
     default: `${site.name} — ${site.role}`,
     template: `%s · ${site.name}`,
   },
-  description: `Personal site of ${site.name}. ${site.role}.`,
+  description: `${site.name} is a ${site.role.toLowerCase()} interested in software engineering. See his projects, writing, resume, and how to get in touch.`,
   openGraph: {
     title: `${site.name} — ${site.role}`,
-    description: `Personal site of ${site.name}.`,
+    description: `${site.name} — ${site.role}. Projects, writing, and contact.`,
     url: `https://${site.domain}`,
     siteName: site.name,
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.name} — ${site.role}`,
+    description: `${site.name} — ${site.role}.`,
   },
 };
 

@@ -17,11 +17,6 @@ const methods = [
     value: site.schoolEmail,
     href: `mailto:${site.schoolEmail}`,
   },
-  {
-    label: "Phone",
-    value: site.phone,
-    href: `tel:+1${site.phone.replace(/\D/g, "")}`,
-  },
 ];
 
 export default function ContactPage() {
@@ -36,7 +31,7 @@ export default function ContactPage() {
       </header>
 
       {/* Direct contact methods */}
-      <div className="grid gap-4 sm:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2">
         {methods.map((m) => (
           <a
             key={m.label}
