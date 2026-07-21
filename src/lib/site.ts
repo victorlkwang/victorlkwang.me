@@ -6,7 +6,7 @@
 export const site = {
   name: "Victor Wang",
   // Short line under your name in the hero + used in the browser tab
-  role: "Student at NYU",
+  role: "Computer Science student at NYU",
   domain: "victorlkwang.me",
   email: "vhw2009@nyu.edu",
   location: "New York",
@@ -16,10 +16,12 @@ export const site = {
   // point this at it: "/profile.jpg". A placeholder is used until then.
   avatar: "/profile.svg",
 
+  // Your résumé PDF, shown on the /resume page. Lives in /public.
+  resume: "/Victor_Wang_Resume.pdf",
+
   // A couple of sentences about you, shown on the home page.
-  // Write like you'd talk. Swap these for the real thing.
   about: [
-    "Hey, I'm Victor. I study at NYU, and most of my free time goes into building things for the web and taking apart how other things work.",
+    "I'm a computer science student at NYU interested in software engineering and opportunities across tech. I enjoy learning how systems work, building useful products, and turning ideas into something people can use.",
     "This site is where I keep the projects I've worked on and post the occasional thing I've been thinking about. It's a work in progress, same as me.",
   ],
 
@@ -39,5 +41,6 @@ export const nav = [
   { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
   { label: "Blog", href: "/blog" },
+  { label: "Resume", href: "/resume" },
   { label: "Contact", href: "/contact" },
 ];

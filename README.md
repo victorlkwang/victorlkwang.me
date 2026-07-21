@@ -26,6 +26,12 @@ Both projects and blog posts work the same way: each is a Markdown file with a
 short front-matter block on top and a full write-up below, and each gets its own
 page you can click into.
 
+### Updating your resume
+
+Replace `public/Victor_Wang_Resume.pdf` with a new PDF (keep the same name, or
+update `resume` in `src/lib/site.ts` to match). It's shown on the `/resume` page
+with view + download buttons.
+
 ### Adding your profile photo
 
 Drop your photo into the `public/` folder (e.g. `public/profile.jpg`), then set

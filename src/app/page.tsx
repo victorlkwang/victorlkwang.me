@@ -11,9 +11,9 @@ export default function HomePage() {
           {/* Left: intro */}
           <div>
             <p className="font-mono text-sm text-accent">Hi there 👋</p>
-            <h1 className="mt-5 max-w-2xl text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
-              I&apos;m {site.name.split(" ")[0]}, and I build{" "}
-              <span className="text-gradient">things for the web.</span>
+            <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
+              I&apos;m {site.name.split(" ")[0]}—a student, builder, and{" "}
+              <span className="text-gradient">aspiring software engineer.</span>
             </h1>
             <div className="mt-8 max-w-xl space-y-4 text-lg leading-relaxed text-muted">
               {site.about.map((p, i) => (
@@ -43,7 +43,7 @@ export default function HomePage() {
                 href="/contact"
                 className="rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
               >
-                Say hi
+                Contact me
               </Link>
             </div>
           </div>
