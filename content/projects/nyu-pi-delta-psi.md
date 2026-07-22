@@ -8,6 +8,7 @@ repo: "https://github.com/victorlkwang/nyupdpsi.org"
 live: "https://nyupdpsi.org"
 cover: "/projects/pdpsi-home.webp"
 featured: true
+order: 1
 ---
 
 The official website and internal platform for the Zeta Chapter of Pi Delta Psi

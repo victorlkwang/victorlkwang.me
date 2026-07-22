@@ -20,6 +20,7 @@ export type ProjectMeta = {
   live?: string;
   cover?: string; // path to a cover image in /public
   featured?: boolean;
+  order?: number; // manual sort position (lower = earlier); unset sorts last
 };
 
 export type Project = ProjectMeta & {
@@ -46,6 +47,7 @@ function toMeta(file: string): ProjectMeta {
     live: data.live,
     cover: data.cover,
     featured: data.featured ?? false,
+    order: typeof data.order === "number" ? data.order : undefined,
   };
 }
 
@@ -53,8 +55,12 @@ export function getAllProjects(): ProjectMeta[] {
   return readProjectFiles()
     .map(toMeta)
     .sort((a, b) => {
-      // Featured first, then newest by date.
-      if (a.featured !== b.featured) return a.featured ? -1 : 1;
+      // Manual order wins: the `order` in each project's front-matter sets the
+      // position (lower = earlier). Projects without an `order` fall to the
+      // end, newest by date first.
+      const ao = a.order ?? Infinity;
+      const bo = b.order ?? Infinity;
+      if (ao !== bo) return ao - bo;
       return a.date < b.date ? 1 : -1;
     });
 }
