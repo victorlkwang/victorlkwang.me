@@ -6,6 +6,7 @@ excerpt: "Python automation that books NYU Bobst study rooms on LibCal — a Pla
 tags: ["Python", "Playwright", "Automation"]
 repo: "https://github.com/victorlkwang/bobst-bot"
 cover: "/projects/bobst-terminal.webp"
+order: 2
 ---
 
 Group study rooms at NYU's Bobst Library are booked through LibCal, which has no

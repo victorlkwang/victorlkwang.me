@@ -72,12 +72,16 @@ tags: ["Next.js", "TypeScript"]
 repo: "https://github.com/you/my-project"
 live: "https://my-project.com"
 featured: true
+order: 4
 ---
 
 The full story of the project in **Markdown** here.
 ```
 
-`repo`, `live`, and `featured` are optional. Commit and push to publish.
+`repo`, `live`, `featured`, and `order` are optional. `order` sets the position
+in the projects list (lower number = higher up); give a new project the next
+number after the last one. Projects without an `order` sort to the bottom,
+newest first. Commit and push to publish.
 
 ## Running locally
 

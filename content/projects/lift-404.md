@@ -7,6 +7,7 @@ tags: ["Expo", "React Native", "TypeScript"]
 repo: "https://github.com/victorlkwang/lift404"
 cover: "/projects/lift404-cover.webp"
 featured: true
+order: 3
 ---
 
 A minimal workout tracker for iPhone, inspired by [Liftoff](https://liftoff.strengthlevel.com/).
@@ -60,4 +61,4 @@ totals for days trained and total time.
 
 The whole thing runs free-forever inside **Expo Go**, so I can use it on my own
 phone today without an Apple Developer account. The full write-up on how it works
-— and why I stopped paying for Liftoff — is over on the [blog](/blog/i-stopped-paying-for-a-workout-app).
+— and why I stopped paying for Liftoff — is over on the [dev log](/blog/lift-404-dev-log-day-1).
